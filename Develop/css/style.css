@@ -1,212 +1,338 @@
-{
+/* 
+   The following CSS code resets the default margin and padding for all elements 
+   and ensures that all elements include their padding and border in their total 
+   width and height. 
+*/
+ 
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
 html {
   font-size: 16px;
+  /* Set the base font size for the document */
 }
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
+  /* Set the default font family */
   line-height: 1.6;
+  /* Set the default line height */
   color: #444;
+  /* Set the default text color */
   background-color: #f0f0f0;
+  /* Set the default background color */
 }
 
 h1,
 h2 {
   margin-bottom: 10px;
+  /* Add some margin at the bottom of h1 and h2 elements */
 }
 
+/* Utility classes */
 .container {
   max-width: 1200px;
+  /* Set the maximum width for the container */
   margin: 0 auto;
+  /* Center the container horizontally */
   padding: 0 20px;
+  /* Add padding to left and right sides of the container */
 }
 
 .text-center {
   text-align: center;
+  /* Center text for the elements with this class */
 }
 
-
+/* Header */
 header {
   display: flex;
+  /* Use flexbox for header layout */
   flex-direction: column;
+  /* Arrange the header content in a column */
   justify-content: center;
+  /* Center the header content vertically */
   align-items: center;
+  /* Center the header content horizontally */
   padding: 1rem 0;
+  /* Add some padding to the top and bottom of the header */
   background-color: #0088cc;
+  /* Set the header background color */
   color: #fff;
+  /* Set the header text color */
   position: sticky;
+  /* Make the header stick to the top of the viewport */
   top: 0;
+  /* Set the initial position of the header at the top */
   z-index: 1000;
+  /* Set the stacking order of the header */
 }
 
 header h1 {
   margin-bottom: 10px;
+  /* Add some margin at the bottom of the h1 inside the header */
 }
 
 #timer {
   margin-top: 10px;
+  /* Add some margin at the top of the timer element */
 }
 
+/* Main content */
 main {
   padding: 2rem;
+  /* Add padding to all sides of the main content */
   transition: transform 0.3s;
+  /* Add a transition effect to the transform property */
 }
 
+/* Start screen section */
 #start-screen {
   text-align: center;
+  /* Center text inside the start-screen section */
 }
 
+/* Start button styles */
 #start-button {
   display: inline-block;
+  /* Display as inline-block for positioning */
   padding: 10px 20px;
+  /* Add padding for better appearance */
   background-color: #ff6f61;
+  /* Set button background color */
   color: #fff;
+  /* Set button text color */
   border: none;
+  /* Remove default border */
   cursor: pointer;
+  /* Change cursor to pointer on hover */
   text-transform: uppercase;
+  /* Set text to uppercase */
   font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
+  /* Add border radius for rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add box-shadow for a 3D effect */
   transition: background-color 0.3s, transform 0.3s;
+  /* Add smooth transitions for background-color and transform */
   animation: pulse 1s infinite;
+  /* Apply pulse animation */
 }
 
+/* Pulse animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
+    /* Start with the original size */
   }
 
   50% {
-    transform: scale(1.10);
+    transform: scale(1.05);
+    /* Scale up to 1.05 times the original size */
   }
 
   100% {
     transform: scale(1);
+    /* Return to the original size */
   }
 }
 
 #start-button:hover {
   background-color: #ff8f7d;
+  /* Change button background color on hover */
   transform: translateY(-2px);
+  /* Move button up by 2px on hover */
 }
 
+/* Quiz section */
 #quiz {
   display: none;
+  /* Hide quiz section by default */
 }
 
 #quiz h2,
 #quiz p {
   text-align: center;
+  /* Center-align the text */
 }
 
 #quiz ul {
   list-style: none;
+  /* Remove default list styles */
   display: flex;
+  /* Use flex layout */
   flex-direction: column;
+  /* Arrange items vertically */
   align-items: center;
+  /* Center-align items horizontally */
 }
 
 #quiz li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  /* Add bottom margin for spacing between items */
 }
 
+/* Quiz section button styles */
 #quiz button {
   padding: 10px 20px;
+  /* Add padding for better appearance */
   background-color: #0088cc;
+  /* Set button background color */
   color: #fff;
+  /* Set button text color */
   border: none;
+  /* Remove default border */
   cursor: pointer;
+  /* Change cursor to pointer on hover */
   text-transform: uppercase;
+  /* Set text to uppercase */
   font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
+  /* Add border radius for rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add box-shadow for a 3D effect */
   transition: background-color 0.3s, transform 0.3s;
+  /* Add smooth transitions for background-color and transform */
 }
 
+/* Quiz section button hover styles */
 #quiz button:hover {
   background-color: #00a8ff;
+  /* Change button background color on hover */
   transform: translateY(-2px);
+  /* Move button up slightly on hover */
 }
 
+
+/* Game over section */
 #game-over {
   display: none;
+  /* Hide game over section by default */
 }
 
 #game-over form {
   display: inline-block;
+  /* Display form as inline-block for positioning */
   margin-top: 20px;
+  /* Add top margin for spacing */
 }
 
+/* Game over section input field styles */
 #game-over input[type="text"] {
   padding: 5px;
+  /* Add padding for better appearance */
   border: 1px solid #ccc;
+  /* Add a light gray border */
   border-radius: 5px;
+  /* Add border radius for rounded corners */
 }
 
+/* Game over section button styles */
 #game-over button {
   display: inline-block;
+  /* Display button as inline-block for positioning */
   margin-left: 10px;
+  /* Add left margin for spacing */
   padding: 5px 10px;
+  /* Add padding for better appearance */
   background-color: #6ab04c;
+  /* Set button background color */
   color: #fff;
+  /* Set button text color */
   border: none;
+  /* Remove default border */
   cursor: pointer;
+  /* Change cursor to pointer on hover */
   text-transform: uppercase;
+  /* Set text to uppercase */
   font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
+  /* Add border radius for rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add box-shadow for a 3D effect */
   transition: background-color 0.3s, transform 0.3s;
+  /* Add smooth transitions for background-color and transform */
 }
 
+/* Game over section button hover styles */
 #game-over button:hover {
   background-color: #86c55a;
+  /* Change button background color on hover */
   transform: translateY(-2px);
+  /* Move button up slightly on hover */
 }
 
+/* High scores page */
 #high-scores-list {
   list-style: none;
+  /* Remove default list styles */
   margin-bottom: 20px;
+  /* Add bottom margin for spacing */
 }
 
 #clear-scores,
 #go-back {
+  /* Apply styles to both buttons */
   display: inline-block;
+  /* Display buttons as inline-block for positioning */
   margin-right: 10px;
+  /* Add right margin for spacing between buttons */
   padding: 10px 20px;
+  /* Add padding for better appearance */
   background-color: #6c757d;
+  /* Set button background color */
   color: #fff;
+  /* Set button text color */
   border: none;
+  /* Remove default border */
   cursor: pointer;
+  /* Change cursor to pointer on hover */
   text-transform: uppercase;
+  /* Set text to uppercase */
   font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
+  /* Add border radius for rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add box-shadow for a 3D effect */
   transition: background-color 0.3s, transform 0.3s;
+  /* Add smooth transitions for background-color and transform */
 }
 
+/* Clear scores and go back button hover styles */
 #clear-scores:hover,
 #go-back:hover {
   background-color: #7f8c94;
+  /* Change button background color on hover */
   transform: translateY(-2px);
+  /* Move button up slightly on hover */
 }
 
 
 .high-scores-container {
   display: flex;
+  /* Use flex layout */
   flex-direction: column;
+  /* Arrange items vertically */
   align-items: center;
+  /* Center-align items horizontally */
   padding: 2rem;
+  /* Add padding for better appearance */
 }
 
 .high-scores-container h1 {
   margin-bottom: 20px;
+  /* Add bottom margin for spacing */
 }
 
 .high-scores-container button {
   margin: 5px;
+  /* Add margin for spacing between buttons */
 }
