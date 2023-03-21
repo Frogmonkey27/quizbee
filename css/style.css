@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   /* Set the default font family */
   line-height: 1.6;
   /* Set the default line height */
@@ -60,7 +60,7 @@ header {
   /* Center the header content horizontally */
   padding: 1rem 0;
   /* Add some padding to the top and bottom of the header */
-  background-color: #0088cc;
+  background-color: #235812;
   /* Set the header background color */
   color: #fff;
   /* Set the header text color */
@@ -102,7 +102,7 @@ main {
   /* Display as inline-block for positioning */
   padding: 10px 20px;
   /* Add padding for better appearance */
-  background-color: #ff6f61;
+  background-color: #20b747;
   /* Set button background color */
   color: #fff;
   /* Set button text color */
@@ -114,13 +114,11 @@ main {
   /* Set text to uppercase */
   font-weight: bold;
   /* Make text bold */
-  border-radius: 5px;
-  /* Add border radius for rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* Add box-shadow for a 3D effect */
   transition: background-color 0.3s, transform 0.3s;
   /* Add smooth transitions for background-color and transform */
-  animation: pulse 1s infinite;
+  animation: pulse .1s infinite;
   /* Apply pulse animation */
 }
 
@@ -143,8 +141,8 @@ main {
 }
 
 #start-button:hover {
-  background-color: #ff8f7d;
-  /* Change button background color on hover */
+  background-color: #ff0202;
+  /* Change button button color on hover */
   transform: translateY(-2px);
   /* Move button up by 2px on hover */
 }
