@@ -20,7 +20,7 @@ const questions = [
     {
         question: 'What is the difference between "undefined" and "null" in JavaScript?',
         answers: ['"Undefined" and "null" are the same in JavaScript.', '"Undefined" represents no value or no object, while "null" means a variable has been declared but has not yet been assigned a value.', 'There is no difference between "undefined" and "null" in JavaScript, "Undefined" means a variable has been declared but has not yet been assigned a value, while "null" is an assignment value that represents no value or no object.'],
-        correctAnswerIndex: 3
+        correctAnswerIndex: 2
     },
     {
         question: 'What is a closure in JavaScript?',
